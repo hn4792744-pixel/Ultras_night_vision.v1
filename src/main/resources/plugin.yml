@@ -1,0 +1,26 @@
+name: Ultras_NightVision
+version: '${version}'
+main: com.ultras.nightvision.UltrasNightVisionPlugin
+api-version: '1.21'
+author: UC_Hussein
+description: Persistent, clean Night Vision toggle for yourself, other players, or everyone online.
+
+commands:
+  nv:
+    description: Toggle Night Vision
+    usage: /nv [player|all|reload]
+    aliases: [nightvision]
+
+permissions:
+  ultras.nv.use:
+    description: Toggle your own Night Vision
+    default: true
+  ultras.nv.others:
+    description: Toggle Night Vision for another player
+    default: op
+  ultras.nv.all:
+    description: Toggle Night Vision for every online player
+    default: op
+  ultras.nv.admin:
+    description: Reload the plugin's configuration
+    default: op

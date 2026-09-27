@@ -1,0 +1,25 @@
+# English messages. %prefix% pulls from config.yml so the branding stays consistent everywhere.
+# Placeholders: %player% is replaced with a player's name where noted.
+
+enabled-self: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴇɴᴀʙʟᴇᴅ."
+disabled-self: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴅɪsᴀʙʟᴇᴅ."
+
+enabled-target: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴇɴᴀʙʟᴇᴅ ꜰᴏʀ <white>%player%<gray>."
+disabled-target: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴅɪsᴀʙʟᴇᴅ ꜰᴏʀ <white>%player%<gray>."
+target-notify-enabled: "%prefix%<gray>ʏᴏᴜʀ ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴡᴀs ᴇɴᴀʙʟᴇᴅ."
+target-notify-disabled: "%prefix%<gray>ʏᴏᴜʀ ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴡᴀs ᴅɪsᴀʙʟᴇᴅ."
+
+all-enabled: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴇɴᴀʙʟᴇᴅ ꜰᴏʀ ᴀʟʟ ᴘʟᴀʏᴇʀs."
+all-disabled: "%prefix%<gray>ɴɪɢʜᴛ ᴠɪsɪᴏɴ ᴅɪsᴀʙʟᴇᴅ ꜰᴏʀ ᴀʟʟ ᴘʟᴀʏᴇʀs."
+all-notify-enabled: "%prefix%<gray>sᴛᴀꜰꜰ ᴇɴᴀʙʟᴇᴅ ɴɪɢʜᴛ ᴠɪsɪᴏɴ ꜰᴏʀ ᴇᴠᴇʀʏᴏɴᴇ."
+all-notify-disabled: "%prefix%<gray>sᴛᴀꜰꜰ ᴅɪsᴀʙʟᴇᴅ ɴɪɢʜᴛ ᴠɪsɪᴏɴ ꜰᴏʀ ᴇᴠᴇʀʏᴏɴᴇ."
+
+actionbar-on: "ɴɪɢʜᴛ ᴠɪsɪᴏɴ: ᴏɴ"
+actionbar-off: "ɴɪɢʜᴛ ᴠɪsɪᴏɴ: ᴏғғ"
+
+no-permission: "%prefix%<gray>ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴅᴏ ᴛʜᴀᴛ."
+player-not-found: "%prefix%<gray>ᴘʟᴀʏᴇʀ ɴᴏᴛ ꜰᴏᴜɴᴅ: <white>%player%"
+player-only: "%prefix%<gray>ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ-ɢᴀᴍᴇ."
+cooldown: "%prefix%<gray>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴇꜰᴏʀᴇ ᴛᴏɢɢʟɪɴɢ ᴀɢᴀɪɴ."
+usage: "%prefix%<gray>ᴜsᴀɢᴇ: <white>/nv [player|all|reload]"
+reload-done: "%prefix%<gray>ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ʀᴇʟᴏᴀᴅᴇᴅ."

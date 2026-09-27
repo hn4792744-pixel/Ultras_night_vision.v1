@@ -1,0 +1,78 @@
+# Ultras_NightVision configuration. Everything here can be changed without touching any code.
+config-version: 1
+
+# Language file to use from the messages/ folder (messages/en.yml, messages/ar.yml, or your own copy).
+language: en
+
+command:
+  name: nv
+  aliases: [nightvision]
+
+permissions:
+  use: ultras.nv.use
+  others: ultras.nv.others
+  all: ultras.nv.all
+  admin: ultras.nv.admin
+
+# Seconds a player must wait between their own toggles. 0 disables the cooldown.
+# This only limits how often ONE player can flip their OWN night vision; it does not affect staff
+# using /nv <player> or /nv all.
+cooldown-seconds: 2
+
+night-vision:
+  amplifier: 0
+  # How long a single application lasts, in ticks (20 ticks = 1 second). 999999 ticks is ~13.8 hours;
+  # the plugin re-applies it well before it would ever run out (see refresh-check-interval-seconds),
+  # so in practice it never expires while enabled - this is just a safety ceiling, not a real timer.
+  duration-ticks: 999999
+  # How often (in seconds) the plugin checks that every enabled player still has the effect and,
+  # if not (removed by a potion, milk bucket, another plugin, etc.), re-applies it.
+  refresh-check-interval-seconds: 15
+  # Only re-apply if the remaining duration has dropped below this many ticks - avoids pointless
+  # re-application spam every check when the effect is still fine.
+  reapply-below-ticks: 12000
+  hide-particles: true
+  hide-icon: true
+  ambient: false
+
+persistence:
+  enabled: true
+  # File name inside the plugin's data folder.
+  file: players.yml
+  # How often (in seconds) the in-memory list is flushed to disk, in addition to being saved
+  # immediately after every toggle. Writes happen off the main thread either way.
+  save-interval-seconds: 60
+
+action-bar:
+  enabled: true
+  # How long (in seconds) the action-bar message stays visible after a toggle.
+  duration-seconds: 3
+  # How often (in ticks) it is re-sent while the duration above is running (action bars fade quickly
+  # if not refreshed - this is what makes "duration" actually work).
+  resend-interval-ticks: 20
+
+sounds:
+  enabled: true
+  enable:
+    sound: BLOCK_NOTE_BLOCK_CHIME
+    volume: 0.6
+    pitch: 1.4
+  disable:
+    sound: BLOCK_NOTE_BLOCK_BASS
+    volume: 0.6
+    pitch: 0.8
+
+# Branding. The gradient prefix is shared by every language file via the %prefix% placeholder.
+prefix: "<gradient:#ff1f1f:#8b0000>ULTRAS</gradient> <dark_gray>|</dark_gray> "
+
+target-behavior:
+  # Message shown to the staff member who ran /nv <player>.
+  notify-sender: true
+  # Message shown to the target player themselves.
+  notify-target: true
+
+all-behavior:
+  # Message shown to the staff member who ran /nv all.
+  notify-sender: true
+  # Message shown to every other online player affected.
+  notify-everyone: true

@@ -1,0 +1,26 @@
+# رسائل عربية. %prefix% تُقرأ من config.yml حتى تبقى الهوية موحّدة في كل مكان.
+# المتغيرات: %player% تُستبدل باسم اللاعب حيث يُذكر.
+
+enabled-self: "%prefix%<gray>تم تفعيل الرؤية الليلية."
+disabled-self: "%prefix%<gray>تم إيقاف الرؤية الليلية."
+
+enabled-target: "%prefix%<gray>تم تفعيل الرؤية الليلية للاعب <white>%player%<gray>."
+disabled-target: "%prefix%<gray>تم إيقاف الرؤية الليلية للاعب <white>%player%<gray>."
+target-notify-enabled: "%prefix%<gray>تم تفعيل رؤيتك الليلية."
+target-notify-disabled: "%prefix%<gray>تم إيقاف رؤيتك الليلية."
+
+all-enabled: "%prefix%<gray>تم تفعيل الرؤية الليلية لجميع اللاعبين."
+all-disabled: "%prefix%<gray>تم إيقاف الرؤية الليلية لجميع اللاعبين."
+all-notify-enabled: "%prefix%<gray>قامت الإدارة بتفعيل الرؤية الليلية للجميع."
+all-notify-disabled: "%prefix%<gray>قامت الإدارة بإيقاف الرؤية الليلية للجميع."
+
+# النص في الـ Action Bar يبقى بالإنجليزية بالتصميم الصغير المطلوب، حتى في ملف اللغة العربية.
+actionbar-on: "ɴɪɢʜᴛ ᴠɪsɪᴏɴ: ᴏɴ"
+actionbar-off: "ɴɪɢʜᴛ ᴠɪsɪᴏɴ: ᴏғғ"
+
+no-permission: "%prefix%<gray>ﻻ تملك الصلاحية لتنفيذ هذا الأمر."
+player-not-found: "%prefix%<gray>اللاعب غير موجود: <white>%player%"
+player-only: "%prefix%<gray>هذا الأمر يعمل داخل اللعبة فقط."
+cooldown: "%prefix%<gray>يرجى الانتظار قبل التبديل مرة أخرى."
+usage: "%prefix%<gray>الاستخدام: <white>/nv [player|all|reload]"
+reload-done: "%prefix%<gray>تمت إعادة تحميل الإعدادات."
